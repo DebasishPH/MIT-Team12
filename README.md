@@ -23,7 +23,7 @@
 
 ## About The Project
 
-![WhatsApp Image 2021-09-06 at 10.17.10 PM.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f01665c2-df15-44f4-9c61-75006f4c738c/WhatsApp_Image_2021-09-06_at_10.17.10_PM.jpeg)
+![Demo_Image](./image.jpeg)
 
 In this project we create a Dashboard based on which User would be able to analyze the sentiment of the specific stock. We can create an Analytical Server "OHLC" (Open/High/Low/Close) time series based on the ‘Stock List’.
 
@@ -56,38 +56,38 @@ This is an example of how to list things you need to use the software and how to
 
 - Pandas
 
-    ```
-    import Pandas as pd
-    ```
+  ```
+  import Pandas as pd
+  ```
 
 - csv
 
-    ```
-    import csv
-    ```
+  ```
+  import csv
+  ```
 
 - plotly - express, graph & objects
 
-    ```
-    $ pip install plotly==5.3.1
-    import plotly.graph_objects as go
-    from plotly import graph_objs as go
-    import plotly.express as px
-    ```
+  ```
+  $ pip install plotly==5.3.1
+  import plotly.graph_objects as go
+  from plotly import graph_objs as go
+  import plotly.express as px
+  ```
 
 - streamlit
 
-    ```
-    pip install streamlit
-    import streamlit as st
-    ```
+  ```
+  pip install streamlit
+  import streamlit as st
+  ```
 
 - pyEX [API]
 
-    ```
-    pip install pyEX
-    import pyEX as p
-    ```
+  ```
+  pip install pyEX
+  import pyEX as p
+  ```
 
 <!-- USAGE EXAMPLES -->
 
@@ -96,7 +96,7 @@ This is an example of how to list things you need to use the software and how to
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch 
+2. Create your Feature Branch
 3. Commit your Changes
 4. Push to the Branc
 5. Open a Pull Request
