@@ -23,7 +23,7 @@
 
 ## About The Project
 
-![Demo_Image](./image.jpeg)
+![Demo_Image](./demo.gif)
 
 In this project we create a Dashboard based on which User would be able to analyze the sentiment of the specific stock. We can create an Analytical Server "OHLC" (Open/High/Low/Close) time series based on the ‘Stock List’.
 
