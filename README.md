@@ -1,6 +1,6 @@
 <!-- TABLE OF CONTENTS -->
-## in a hurry?
-check out via direct link below:
+## In a hurry?
+check out via direct link :
 https://ohlc-chart-engine.herokuapp.com/
 <details open="open">
 <summary>Table of Contents</summary>
