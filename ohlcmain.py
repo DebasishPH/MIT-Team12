@@ -7,7 +7,6 @@ import company_gen as cg
 import graph_gen as gg
 import pyEX as p
 import api
-import pickle
 
 
 jc.conv()
@@ -17,17 +16,17 @@ c = p.Client(api_token=api.IEX_API_TOKEN, version='stable')
 x = st.text_input("Enter Company Symbol ")
 if len(x) != 0:
     x = x.upper()
-    file1 = open("MyFile.txt","a")
+    file1 = open("MyFile.txt", "a")
     file1.write(x+"\n")
     file1.close()
     count = cg.symbol_gen(x)
     if(count == 0):
         st.write("NO COMAPNY FOUND!")
-    else:  
+    else:
         original_list = ['Candle', 'OHLC', 'Vertex Line',
                          'Colored Bar', 'Hollow Candlestick']
         result = st.selectbox('Select a graph type', original_list)
-        
+
         if len(result) != 0:
             if(result == "Candle"):
                 fig = gg.candle_gen()
@@ -45,10 +44,11 @@ if len(x) != 0:
                 fig = gg.hollow_gen()
                 st.plotly_chart(fig)
 
-company_data_symbol = st.sidebar.text_input("Want to know more about a company?")
+company_data_symbol = st.sidebar.text_input(
+    "Want to know more about a company?")
 
 if len(company_data_symbol) != 0:
-    d=c.company(symbol=company_data_symbol) 
+    d = c.company(symbol=company_data_symbol)
     st.sidebar.write("Company Name - " + d['companyName'])
     st.sidebar.write("Web - " + d['website'])
     st.sidebar.write("Primary Exchange - " + d['exchange'])
