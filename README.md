@@ -52,44 +52,39 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Required packages and how to install them.
 
 - Pandas
 
   ```
-  import Pandas as pd
+  pip install pandas
   ```
 
-- csv
-
-  ```
-  import csv
-  ```
 
 - plotly - express, graph & objects
 
   ```
-  $ pip install plotly==5.3.1
-  import plotly.graph_objects as go
-  from plotly import graph_objs as go
-  import plotly.express as px
+  pip install plotly
   ```
 
 - streamlit
 
   ```
   pip install streamlit
-  import streamlit as st
   ```
 
 - pyEX [API]
 
   ```
   pip install pyEX
-  import pyEX as p
   ```
 
 <!-- USAGE EXAMPLES -->
+## How to get the application running
+1. Make sure you have all the required packages installed
+2. Open the command line in the same folder where you cloned the repository
+3. Type the command `streamlit run path\to\file\ohlcmain.py`
+4. Profit
 
 ## Contributing
 
