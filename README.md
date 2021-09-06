@@ -1,6 +1,6 @@
 <!-- TABLE OF CONTENTS -->
 ## In a hurry?
-check out via direct link :
+Check out on _Heroku_ via direct link :
 https://ohlc-chart-engine.herokuapp.com/
 <details open="open">
 <summary>Table of Contents</summary>
@@ -34,9 +34,8 @@ The special features are:
 
 1. User can have the ability to search the different stocks based on the symbols and view the chart.
 2. Users can filter the stock’s performance on specific date range
-3. Users can view the history of their searches.
-4. Users can switch between OHLC, Candlestick charts, Colored Bar, Vertex Line and Hollow Candle.
-5. User can see additional information about selected company. You can use this free resource to get company information by ticker symbol or use any other free API available on internet
+3. Users can switch between OHLC, Candlestick charts, Colored Bar, Vertex Line and Hollow Candle.
+4. User can see additional information about selected company. You can use this free resource to get company information by ticker symbol or use any other free API available on internet
 
 ### Built With
 
@@ -96,7 +95,7 @@ Contributions are what make the open source community such an amazing place to l
 1. Fork the Project
 2. Create your Feature Branch
 3. Commit your Changes
-4. Push to the Branc
+4. Push to the Branch
 5. Open a Pull Request
 
 <!-- CONTACT -->
