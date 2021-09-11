@@ -14,15 +14,22 @@ st.title("OHLC Chart Engine")
 c = p.Client(api_token=api.IEX_API_TOKEN, version='stable')
 
 x = st.text_input("Enter Company Symbol ")
+file1 = open("MyFile.txt", "a")
+file1.write(x)
+file1.write("\n")
+file1.close()
 if len(x) != 0:
     x = x.upper()
-    file1 = open("MyFile.txt", "a")
-    file1.write(x+"\n")
-    file1.close()
     count = cg.symbol_gen(x)
+
     if(count == 0):
         st.write("NO COMAPNY FOUND!")
     else:
+        file2 = open("Myfile.txt", "r")
+        content_list = file2.read()
+        content_list = content_list.split("\n")
+        content_list = list(set(content_list))
+        st.selectbox('Search History', content_list)
         original_list = ['Candle', 'OHLC', 'Vertex Line',
                          'Colored Bar', 'Hollow Candlestick']
         result = st.selectbox('Select a graph type', original_list)
